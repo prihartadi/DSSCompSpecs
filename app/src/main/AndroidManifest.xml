@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prihartadi.dsscompspecs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- ORIGINAL -->
+        <!-- <activity android:name=".A_Main"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!--  -->
+        <!-- <activity android:name=".A_Splash" /> -->
+        <!-- <activity android:name=".A_Result" /> -->
+        <!-- <activity android:name=".A_Help" /> -->
+        <!-- <activity android:name=".A_Custom"></activity> -->
+
+
+        <!-- EDIT -->
+        <activity
+            android:name=".A_Splash"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".A_Main"
+            android:label="Main" />
+        <activity
+            android:name=".A_Custom"
+            android:label="Custom" />
+        <activity
+            android:name=".A_Result"
+            android:label="Result" />
+        <activity
+            android:name=".A_Help"
+            android:label="Help" />
+        <activity
+            android:name=".A_Update"
+            android:label="Update" />
+        <activity
+            android:name=".A_About"
+            android:label="About" />
+        <activity
+            android:name=".A_Search"
+            android:label="Search"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".A_Saved"
+            android:label="Saved" />
+        <activity
+            android:name=".A_CleanResult"
+            android:label="Saved Result" />
+        <activity android:name=".A_HelpDetail"
+            android:label="Detail"
+            />
+    </application>
+
+</manifest>

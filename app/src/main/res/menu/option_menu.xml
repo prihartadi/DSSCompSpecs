@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main"
+        android:title="Main">
+    </item>
+    <item
+        android:id="@+id/custom"
+        android:title="Custom">
+    </item>
+    <item
+        android:id="@+id/update"
+        android:title="Update">
+    </item>
+    <item
+        android:id="@+id/saved"
+        android:title="Saved">
+    </item>
+    <item
+        android:id="@+id/help"
+        android:title="Help">
+    </item>
+    <item
+        android:id="@+id/about"
+        android:title="About">
+    </item>
+
+
+</menu>

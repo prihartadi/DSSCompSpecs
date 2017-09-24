@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prihartadi.dsscompspecs.A_Main">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:visibility="visible"
+            app:fillColor="#FFFFFFFF"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp" />
+
+        <Spinner
+            android:id="@+id/spinCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/carouselView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/rp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/spinCategory"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Rp."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editButget"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/rp"
+            android:layout_alignBottom="@+id/rp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/rp"
+            android:ems="10"
+            android:hint="Budget"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="false"
+            android:textAlignment="textEnd" />
+
+        <!--<EditText-->
+            <!--android:id="@+id/editT0"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/editBudget"-->
+            <!--android:ems="10"-->
+            <!--android:hint="T0"-->
+            <!--android:inputType="numberDecimal"-->
+            <!--android:text="10" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/editTN"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@+id/editT0"-->
+            <!--android:layout_alignBottom="@+id/editT0"-->
+            <!--android:layout_toEndOf="@+id/editT0"-->
+            <!--android:ems="10"-->
+            <!--android:hint="TN"-->
+            <!--android:inputType="numberDecimal"-->
+            <!--android:text="0.0001" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/editN"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/editTN"-->
+            <!--android:ems="10"-->
+            <!--android:hint="N"-->
+            <!--android:inputType="number"-->
+            <!--android:text="1000" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/editType"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@+id/editN"-->
+            <!--android:layout_alignBottom="@+id/editN"-->
+            <!--android:layout_toEndOf="@+id/editN"-->
+            <!--android:ems="10"-->
+            <!--android:hint="Type"-->
+            <!--android:inputType="number"-->
+            <!--android:text="0" />-->
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="bottom"
+            android:text="Mulai"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
