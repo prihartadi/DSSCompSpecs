@@ -72,9 +72,16 @@
         <activity
             android:name=".A_CleanResult"
             android:label="Saved Result" />
-        <activity android:name=".A_HelpDetail"
-            android:label="Detail"
-            />
+        <activity
+            android:name=".A_HelpDetail"
+            android:label="Detail" />
+        <activity android:name=".A_Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
